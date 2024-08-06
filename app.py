@@ -18,7 +18,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def generate_response(messages):
     try:
         response = client.chat.completions.create(
-            model="gpt-4-0125-preview",  # GPT-4 mini 모델 사용
+            model="gpt-4o-mini",  # GPT-4 mini 모델 사용
             messages=messages,
             max_tokens=1000,
             temperature=0.7,
